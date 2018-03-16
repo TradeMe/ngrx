@@ -1,0 +1,33 @@
+{
+  "name": "@trademe/aggregate",
+  "version": "0.0.0-alpha-1",
+  "description": "RxJs operator to aggregate actions",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "compile": "tsc",
+    "lint": "npm run lint:src",
+    "lint:src": "tslint -c tslint.json 'src/**/*.ts'",
+    "build": "npm run clean && npm run compile && npm run lint",
+    "build:ci": "npm run compile && npm run lint",
+    "clean": "rimraf ./compiled && rimraf ./dist",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "Vamsi Vempati",
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/core": "^5.2.9",
+    "@ngrx/store": "^5.2.0",
+    "rxjs": "^5.5.7",
+    "zone.js": "^0.8.4"
+  },
+  "devDependencies": {
+    "@angular/core": "^5.2.9",
+    "@ngrx/store": "^5.2.0",
+    "rxjs": "^5.5.7",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.9.1",
+    "typescript": "^2.6.2",
+    "zone.js": "^0.8.4"
+  }
+}
