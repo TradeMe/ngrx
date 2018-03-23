@@ -8,11 +8,7 @@ import { filter, first, switchMap } from 'rxjs/operators';
 
 export type AggregatableAction = Action & { correlationParams?: CorrelationParams };
 export type FailActionForAggregation = Action & { error?: Error, correlationParams?: CorrelationParams };
-
-export class CorrelationParams {
-    public correlationId?: string;
-    public parentActionType?: string;
-}
+export type CorrelationParams = { correlationId?: string, parentActionType?: string };
 
 export function aggregate<T extends AggregatableAction,
     TAction1 extends AggregatableAction,
