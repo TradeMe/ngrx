@@ -1,6 +1,6 @@
 {
-  "name": "@trademe/aggregate",
-  "version": "0.0.0-alpha-1",
+  "name": "@trademe/ngrx",
+  "version": "0.0.0-alpha.3",
   "description": "RxJs operator to aggregate actions",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -16,10 +16,10 @@
   "author": "Vamsi Vempati",
   "license": "MIT",
   "peerDependencies": {
-    "@angular/core": "^5.2.9",
-    "@ngrx/store": "^5.2.0",
-    "rxjs": "^5.5.7",
-    "zone.js": "^0.8.4"
+    "@angular/core": "~5.2.9",
+    "@ngrx/store": "~5.2.0",
+    "rxjs": "~5.5.7",
+    "zone.js": "~0.8.4"
   },
   "devDependencies": {
     "@angular/core": "^5.2.9",
